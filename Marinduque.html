@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Marinduque</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            background: #005f8b;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0077b6;
+        }
+        .place {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 5px solid #0077b6;
+            background-color: #f1faff;
+        }
+        .bonus {
+            background-color: #ffcc00;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 30%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .contact-form {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f1faff;
+            border-radius: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #0077b6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background: #005f8b;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077b6;
+            color: white;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Discover Marinduque</h1>
+    <p>Explore the Heart of the Philippines ❤️</p>
+</header>
+
+<nav>
+    <a href="#places">Places</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="places">
+    <h2>Must-Visit Places in Marinduque</h2>
+
+    <div class="place">
+        <h3>🌊 Bathala Cave</h3>
+        <p>A mysterious cave system in Sta. Cruz, perfect for adventurers looking for a thrilling spelunking experience.</p>
+    </div>
+
+    <div class="place">
+        <h3>🏖️ Poctoy White Beach</h3>
+        <p>A stunning white-sand beach with crystal-clear waters and a breathtaking view of Mt. Malindig.</p>
+    </div>
+
+    <div class="place">
+        <h3>🌴 Maniwaya Island</h3>
+        <p>A hidden paradise with powdery white sand and the famous Palad Sandbar.</p>
+    </div>
+
+    <div class="place">
+        <h3>⛰️ Mt. Malindig</h3>
+        <p>The highest peak in Marinduque, offering breathtaking panoramic views.</p>
+    </div>
+
+    <div class="place">
+        <h3>⛪ Boac Cathedral</h3>
+        <p>A historic church built in 1792, known for its cultural and architectural significance.</p>
+    </div>
+
+    <div class="place">
+        <h3>🌄 Mongpong Island & Ungab Rock Formation</h3>
+        <p>A natural rock formation shaped like an arch, a favorite spot for photographers.</p>
+    </div>
+
+    <div class="place">
+        <h3>♨️ Malbog Sulfur Springs</h3>
+        <p>A natural hot spring known for its therapeutic sulfuric waters.</p>
+    </div>
+
+    <div class="place">
+        <h3>🧭 Luzon Datum of 1911</h3>
+        <p>The geodetic center of the Philippines, offering stunning views.</p>
+    </div>
+
+    <div class="place">
+        <h3>🏚️ Talao Caves</h3>
+        <p>A lesser-known cave system with hidden lagoons and rock formations.</p>
+    </div>
+
+    <div class="place">
+        <h3>🏊‍♂️ Marinduque Hot Springs Resort</h3>
+        <p>A perfect place to relax in warm, natural waters.</p>
+    </div>
+
+    <div class="bonus">
+        🎭 Experience the World-Famous Moriones Festival During Holy Week! 🎭
+    </div>
+</div>
+
+<div class="container" id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/300x200/?beach" alt="Beach">
+        <img src="https://source.unsplash.com/300x200/?island" alt="Island">
+        <img src="https://source.unsplash.com/300x200/?mountain" alt="Mountain">
+        <img src="https://source.unsplash.com/300x200/?cave" alt="Cave">
+        <img src="https://source.unsplash.com/300x200/?church" alt="Church">
+        <img src="https://source.unsplash.com/300x200/?festival" alt="Festival">
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <p>Have questions or need help planning your trip? Contact us below:</p>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </div>
+</div>
+
+<footer>
+    <p>Plan your trip now and explore the wonders of Marinduque! 🌍</p>
+</footer>
+
+</body>
+</html>
